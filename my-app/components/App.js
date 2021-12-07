@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Header} from './Header'
 import {Christmas} from './Christmas'
 import {getChristmas} from '../services/ChristmasService'
+import Head from 'next/head'
 
 class App extends Component {
 
@@ -20,6 +21,10 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Head>
+          <title>MusicFairytales</title>
+          <meta http-equiv="refresh" content="30" />
+        </Head>
         <Header></Header>
         <div className="row mrgnbtm">
           <Christmas christmas={this.state.christmas}></Christmas>
