@@ -23,25 +23,8 @@ class App extends Component {
       <div className="App">
         <Head>
           <title>MusicFairytales</title>
-          <meta http-equiv="refresh" content="600" />
-            <script type="text/javascript" src="/Build/unity.js"></script>
+          <meta http-equiv="refresh" content="30" />
         </Head>
-
-          <div id="unity-container" className="unity-desktop">
-              <canvas id="unity-canvas" width="960" height="600"></canvas>
-          <div id="unity-loading-bar">
-              <div id="unity-logo"></div>
-              <div id="unity-progress-bar-empty">
-                  <div id="unity-progress-bar-full"></div>
-              </div>
-          </div>
-          <div id="unity-warning"> </div>
-          <div id="unity-footer">
-              <div id="unity-webgl-logo"></div>
-              <div id="unity-fullscreen-button"></div>
-              <div id="unity-build-title">My project</div>
-          </div>
-      </div>
       </div>
     );
   }
